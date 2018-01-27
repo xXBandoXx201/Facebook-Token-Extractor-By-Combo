@@ -18,5 +18,5 @@ for line in var:
 	if "session_key" in data:
                 print(data["access_token"])
                 the_file = open(file_save, 'w')
-                the_file.write(data["access_token"])
+                the_file.write(data["access_token"] + '\n')
                 the_file.close()
